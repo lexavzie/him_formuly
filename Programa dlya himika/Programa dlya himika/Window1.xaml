@@ -54,9 +54,14 @@
 						x:Name="menuItem10"
 							Click="menuItem10_Click"></MenuItem>
 						<MenuItem
-							Header="Na"></MenuItem>
+							Header="Na"
+						x:Name="menuItem12"
+							Click="menuItem12_Click"
+						></MenuItem>
 						<MenuItem
-							Header="K"></MenuItem>
+							Header="K"
+						x:Name="menuItem13"
+							Click="menuItem13_Click"></MenuItem>
 						<MenuItem
 							Header="Cu"></MenuItem>
 						<MenuItem
