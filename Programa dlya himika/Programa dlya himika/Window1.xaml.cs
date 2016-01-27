@@ -38,7 +38,7 @@ namespace Programa_dlya_himika
 		}
 		void menuItem3_Click(object sender, RoutedEventArgs e)
 		{
-			throw new NotImplementedException();
+			
 		}
 	void menuItem9_Click(object sender, RoutedEventArgs e)
 		{
