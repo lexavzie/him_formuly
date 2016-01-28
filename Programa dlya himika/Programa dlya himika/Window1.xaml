@@ -5,34 +5,48 @@
 	Width="591"
 	Height="245">
 	<Grid>
-		<TextBox
+		<!-- <TextBox
 			MaxLength="250"
-			x:Name="formula"
-			Grid.Column="0"
-			Grid.Row="0"
-			HorizontalAlignment="Stretch"
-			VerticalAlignment="Stretch"
-			Margin="0,21,0,8"
+			x:Name="formula1"
 			FontSize="21"
 			Text=""
 			FontWeight="ExtraBold"
 			Foreground="#FF1335F4"
-			Background="#FFEDDA2F" />
+			Background="#FFEDDA2F"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Stretch"
+			VerticalAlignment="Stretch"
+			Margin="0,174,0,8" />-->
+		<!-- меню -->
 		<Menu
-			Height="25"
-			VerticalAlignment="Top">
+			Height="33"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Stretch"
+			VerticalAlignment="Top"
+			Margin="0,-1,0,0">
 			<MenuItem
 				Header="Файл"
 				x:Name="menuItem3"
 				Click="menuItem3_Click">
+				<!-- подменю -->
 				<MenuItem
-					Header="Створити"></MenuItem>
+					Header="Створити"
+					x:Name="New"
+					Click="New_Click" />
 				<MenuItem
-					Header="Відкрити"></MenuItem>
+					Header="Відкрити"
+					x:Name="Open"
+					Click="Open_Click" />
 				<MenuItem
-					Header="Зберегти"></MenuItem>
+					Header="Зберегти"
+					x:Name="Save"
+					Click="Save_Click" />
 				<MenuItem
-					Header="Друк"></MenuItem>
+					Header="Друк"
+					x:Name="Print"
+					Click="Print_Click" />
 				<Separator />
 				<MenuItem
 					Header="Вихід"></MenuItem>
@@ -51,201 +65,360 @@
 							Click="menuItem9_Click"></MenuItem>
 						<MenuItem
 							Header="Li"
-						x:Name="menuItem10"
+							x:Name="menuItem10"
 							Click="menuItem10_Click"></MenuItem>
 						<MenuItem
 							Header="Na"
-						x:Name="menuItem12"
-							Click="menuItem12_Click"
-						></MenuItem>
+							x:Name="menuItem11"
+							Click="menuItem11_Click"></MenuItem>
 						<MenuItem
 							Header="K"
-						x:Name="menuItem13"
+							x:Name="menuItem12"
+							Click="menuItem12_Click"></MenuItem>
+						<MenuItem
+							Header="Cu"
+							x:Name="menuItem13"
 							Click="menuItem13_Click"></MenuItem>
 						<MenuItem
-							Header="Cu"></MenuItem>
+							Header="Rb"
+							x:Name="menuItem14"
+							Click="menuItem14_Click"></MenuItem>
 						<MenuItem
-							Header="Rb"></MenuItem>
+							Header="Ag"
+							x:Name="menuItem15"
+							Click="menuItem15_Click"></MenuItem>
 						<MenuItem
-							Header="Ag"></MenuItem>
+							Header="Cs"
+							x:Name="menuItem16"
+							Click="menuItem16_Click"></MenuItem>
 						<MenuItem
-							Header="Cs"></MenuItem>
+							Header="Au"
+							x:Name="menuItem17"
+							Click="menuItem17_Click"></MenuItem>
 						<MenuItem
-							Header="Au"></MenuItem>
-						<MenuItem
-							Header="Fr"></MenuItem>
+							Header="Fr"
+							x:Name="menuItem18"
+							Click="menuItem18_Click"></MenuItem>
 					</MenuItem>
 					<MenuItem
 						Header="II група">
 						<MenuItem
-							Header="Be"></MenuItem>
+							Header="Be"
+							x:Name="menuItem19"
+							Click="menuItem19_Click"></MenuItem>
 						<MenuItem
-							Header="Mg"></MenuItem>
+							Header="Mg"
+							x:Name="menuItem20"
+							Click="menuItem20_Click"></MenuItem>
 						<MenuItem
-							Header="Ca"></MenuItem>
+							Header="Ca"
+							x:Name="menuItem21"
+							Click="menuItem21_Click"></MenuItem>
 						<MenuItem
-							Header="Zn"></MenuItem>
+							Header="Zn"
+							x:Name="menuItem22"
+							Click="menuItem22_Click"></MenuItem>
 						<MenuItem
-							Header="Sr"></MenuItem>
+							Header="Sr"
+							x:Name="menuItem23"
+							Click="menuItem23_Click"></MenuItem>
 						<MenuItem
-							Header="Cd"></MenuItem>
+							Header="Cd"
+							x:Name="menuItem24"
+							Click="menuItem24_Click"></MenuItem>
 						<MenuItem
-							Header="Ba"></MenuItem>
+							Header="Ba"
+							x:Name="menuItem25"
+							Click="menuItem25_Click"></MenuItem>
 						<MenuItem
-							Header="Hg"></MenuItem>
+							Header="Hg"
+							x:Name="menuItem26"
+							Click="menuItem26_Click"></MenuItem>
 						<MenuItem
-							Header="Ra"></MenuItem>
+							Header="Ra"
+							x:Name="menuItem27"
+							Click="menuItem27_Click"></MenuItem>
 					</MenuItem>
 					<MenuItem
 						Header="III група">
 						<MenuItem
-							Header="B"></MenuItem>
+							Header="B"
+							x:Name="menuItem28"
+							Click="menuItem28_Click"></MenuItem>
 						<MenuItem
-							Header="Al"></MenuItem>
+							Header="Al"
+							x:Name="menuItem30"
+							Click="menuItem30_Click"></MenuItem>
 						<MenuItem
-							Header="Sc"></MenuItem>
+							Header="Sc"
+							x:Name="menuItem31"
+							Click="menuItem31_Click"></MenuItem>
 						<MenuItem
-							Header="Ga"></MenuItem>
+							Header="Ga"
+							x:Name="menuItem32"
+							Click="menuItem32_Click"></MenuItem>
 						<MenuItem
-							Header="Y"></MenuItem>
+							Header="Y"
+							x:Name="menuItem33"
+							Click="menuItem33_Click"></MenuItem>
 						<MenuItem
-							Header="In"></MenuItem>
+							Header="In"
+							x:Name="menuItem34"
+							Click="menuItem34_Click"></MenuItem>
 						<MenuItem
-							Header="La"></MenuItem>
+							Header="La"
+							x:Name="menuItem35"
+							Click="menuItem35_Click"></MenuItem>
 						<MenuItem
-							Header="Tl"></MenuItem>
+							Header="Tl"
+							x:Name="menuItem36"
+							Click="menuItem36_Click"></MenuItem>
 						<MenuItem
-							Header="Ac"></MenuItem>
+							Header="Ac"
+							x:Name="menuItem37"
+							Click="menuItem37_Click"></MenuItem>
 					</MenuItem>
 					<MenuItem
 						Header="IV група">
 						<MenuItem
-							Header="C"></MenuItem>
+							Header="C"
+							x:Name="menuItem38"
+							Click="menuItem38_Click"></MenuItem>
 						<MenuItem
-							Header="Si"></MenuItem>
+							Header="Si"
+							x:Name="menuItem39"
+							Click="menuItem39_Click"></MenuItem>
 						<MenuItem
-							Header="Ti"></MenuItem>
+							Header="Ti"
+							x:Name="menuItem40"
+							Click="menuItem40_Click"></MenuItem>
 						<MenuItem
-							Header="Ge"></MenuItem>
+							Header="Ge"
+							x:Name="menuItem41"
+							Click="menuItem41_Click"></MenuItem>
 						<MenuItem
-							Header="Zr"></MenuItem>
+							Header="Zr"
+							x:Name="menuItem42"
+							Click="menuItem42_Click"></MenuItem>
 						<MenuItem
-							Header="Sn"></MenuItem>
+							Header="Sn"
+							x:Name="menuItem43"
+							Click="menuItem43_Click"></MenuItem>
 						<MenuItem
-							Header="Hf"></MenuItem>
+							Header="Hf"
+							x:Name="menuItem44"
+							Click="menuItem44_Click"></MenuItem>
 						<MenuItem
-							Header="Pb"></MenuItem>
+							Header="Pb"
+							x:Name="menuItem45"
+							Click="menuItem45_Click"></MenuItem>
 						<MenuItem
-							Header="Rf"></MenuItem>
+							Header="Rf"
+							x:Name="menuItem46"
+							Click="menuItem46_Click"></MenuItem>
 					</MenuItem>
 					<MenuItem
 						Header="V група">
 						<MenuItem
-							Header="N"></MenuItem>
+							Header="N"
+							x:Name="menuItem47"
+							Click="menuItem47_Click"></MenuItem>
 						<MenuItem
-							Header="P"></MenuItem>
+							Header="P"
+							x:Name="menuItem48"
+							Click="menuItem48_Click"></MenuItem>
 						<MenuItem
-							Header="V"></MenuItem>
+							Header="V"
+							x:Name="menuItem49"
+							Click="menuItem49_Click"></MenuItem>
 						<MenuItem
-							Header="As"></MenuItem>
+							Header="As"
+							x:Name="menuItem50"
+							Click="menuItem50_Click"></MenuItem>
 						<MenuItem
-							Header="Nb"></MenuItem>
+							Header="Nb"
+							x:Name="menuItem51"
+							Click="menuItem51_Click"></MenuItem>
 						<MenuItem
-							Header="Sb"></MenuItem>
+							Header="Sb"
+							x:Name="menuItem52"
+							Click="menuItem52_Click"></MenuItem>
 						<MenuItem
-							Header="Ta"></MenuItem>
+							Header="Ta"
+							x:Name="menuItem53"
+							Click="menuItem53_Click"></MenuItem>
 						<MenuItem
-							Header="Bi"></MenuItem>
+							Header="Bi"
+							x:Name="menuItem54"
+							Click="menuItem54_Click"></MenuItem>
 						<MenuItem
-							Header="Db"></MenuItem>
+							Header="Db"
+							x:Name="menuItem56"
+							Click="menuItem56_Click"></MenuItem>
 					</MenuItem>
 					<MenuItem
 						Header="VI група">
 						<MenuItem
-							Header="O"></MenuItem>
+							Header="O"
+							x:Name="menuItem57"
+							Click="menuItem57_Click"></MenuItem>
 						<MenuItem
-							Header="S"></MenuItem>
+							Header="S"
+							x:Name="menuItem58"
+							Click="menuItem58_Click"></MenuItem>
 						<MenuItem
-							Header="Cr"></MenuItem>
+							Header="Cr"
+							x:Name="menuItem59"
+							Click="menuItem59_Click"></MenuItem>
 						<MenuItem
-							Header="Se"></MenuItem>
+							Header="Se"
+							x:Name="menuItem60"
+							Click="menuItem60_Click"></MenuItem>
 						<MenuItem
-							Header="Mo"></MenuItem>
+							Header="Mo"
+							x:Name="menuItem61"
+							Click="menuItem61_Click"></MenuItem>
 						<MenuItem
-							Header="Te"></MenuItem>
+							Header="Te"
+							x:Name="menuItem62"
+							Click="menuItem62_Click"></MenuItem>
 						<MenuItem
-							Header="W"></MenuItem>
+							Header="W"
+							x:Name="menuItem63"
+							Click="menuItem63_Click"></MenuItem>
 						<MenuItem
-							Header="Po"></MenuItem>
+							Header="Po"
+							x:Name="menuItem64"
+							Click="menuItem64_Click"></MenuItem>
 						<MenuItem
-							Header="Sg"></MenuItem>
+							Header="Sg"
+							x:Name="menuItem65"
+							Click="menuItem65_Click"></MenuItem>
 					</MenuItem>
 					<MenuItem
 						Header="VII група">
 						<MenuItem
-							Header="F"></MenuItem>
+							Header="F"
+							x:Name="menuItem66"
+							Click="menuItem66_Click"></MenuItem>
 						<MenuItem
-							Header="Cl"></MenuItem>
+							Header="Cl"
+							x:Name="menuItem67"
+							Click="menuItem67_Click"></MenuItem>
 						<MenuItem
-							Header="Mn"></MenuItem>
+							Header="Mn"
+							x:Name="menuItem68"
+							Click="menuItem68_Click"></MenuItem>
 						<MenuItem
-							Header="Br"></MenuItem>
+							Header="Br"
+							x:Name="menuItem69"
+							Click="menuItem69_Click"></MenuItem>
 						<MenuItem
-							Header="Tc"></MenuItem>
+							Header="Tc"
+							x:Name="menuItem70"
+							Click="menuItem70_Click"></MenuItem>
 						<MenuItem
-							Header="I"></MenuItem>
+							Header="I"
+							x:Name="menuItem71"
+							Click="menuItem71_Click"></MenuItem>
 						<MenuItem
-							Header="Re"></MenuItem>
+							Header="Re"
+							x:Name="menuItem72"
+							Click="menuItem72_Click"></MenuItem>
 						<MenuItem
-							Header="At"></MenuItem>
+							Header="At"
+							x:Name="menuItem73"
+							Click="menuItem73_Click"></MenuItem>
 						<MenuItem
-							Header="Bh"></MenuItem>
+							Header="Bh"
+							x:Name="menuItem74"
+							Click="menuItem74_Click"></MenuItem>
 					</MenuItem>
 					<MenuItem
 						Header="VIII-b група">
 						<MenuItem
-							Header="Fe"></MenuItem>
+							Header="Fe"
+							x:Name="menuItem75"
+							Click="menuItem75_Click"></MenuItem>
 						<MenuItem
-							Header="Co"></MenuItem>
+							Header="Co"
+							x:Name="menuItem76"
+							Click="menuItem76_Click"></MenuItem>
 						<MenuItem
-							Header="Ni"></MenuItem>
+							Header="Ni"
+							x:Name="menuItem77"
+							Click="menuItem77_Click"></MenuItem>
 						<MenuItem
-							Header="Ru"></MenuItem>
+							Header="Ru"
+							x:Name="menuItem78"
+							Click="menuItem78_Click"></MenuItem>
 						<MenuItem
-							Header="Rh"></MenuItem>
+							Header="Rh"
+							x:Name="menuItem79"
+							Click="menuItem79_Click"></MenuItem>
 						<MenuItem
-							Header="Pd"></MenuItem>
+							Header="Pd"
+							x:Name="menuItem80"
+							Click="menuItem80_Click"></MenuItem>
 						<MenuItem
-							Header="Re"></MenuItem>
+							Header="Re"
+							x:Name="menuItem81"
+							Click="menuItem81_Click"></MenuItem>
 						<MenuItem
-							Header="Os"></MenuItem>
+							Header="Os"
+							x:Name="menuItem82"
+							Click="menuItem82_Click"></MenuItem>
 						<MenuItem
-							Header="Ir"></MenuItem>
+							Header="Ir"
+							x:Name="menuItem83"
+							Click="menuItem83_Click"></MenuItem>
 						<MenuItem
-							Header="Pt"></MenuItem>
+							Header="Pt"
+							x:Name="menuItem84"
+							Click="menuItem84_Click"></MenuItem>
 						<MenuItem
-							Header="Bh"></MenuItem>
+							Header="Bh"
+							x:Name="menuItem85"
+							Click="menuItem85_Click"></MenuItem>
 						<MenuItem
-							Header="Hs"></MenuItem>
+							Header="Hs"
+							x:Name="menuItem86"
+							Click="menuItem86_Click"></MenuItem>
 						<MenuItem
-							Header="Mt"></MenuItem>
+							Header="Mt"
+							x:Name="menuItem87"
+							Click="menuItem87_Click"></MenuItem>
 						<MenuItem
-							Header="Ds"></MenuItem>
+							Header="Ds"
+							x:Name="menuItem88"
+							Click="menuItem88_Click"></MenuItem>
 					</MenuItem>
 					<MenuItem
 						Header="Інертні гази">
 						<MenuItem
-							Header="He"></MenuItem>
+							Header="He"
+							x:Name="menuItem89"
+							Click="menuItem89_Click"></MenuItem>
 						<MenuItem
-							Header="Ne"></MenuItem>
+							Header="Ne"
+							x:Name="menuItem90"
+							Click="menuItem90_Click"></MenuItem>
 						<MenuItem
-							Header="Ar"></MenuItem>
+							Header="Ar"
+							x:Name="menuItem91"
+							Click="menuItem91_Click"></MenuItem>
 						<MenuItem
-							Header="Kr"></MenuItem>
+							Header="Kr"
+							x:Name="menuItem92"
+							Click="menuItem92_Click"></MenuItem>
 						<MenuItem
-							Header="Xe"></MenuItem>
+							Header="Xe"
+							x:Name="menuItem93"
+							Click="menuItem93_Click"></MenuItem>
 						<MenuItem
-							Header="Rn"></MenuItem>
+							Header="Rn"
+							x:Name="menuItem94"
+							Click="menuItem94_Click"></MenuItem>
 					</MenuItem>
 					<MenuItem
 						Header="Лантaноїди"></MenuItem>
@@ -256,22 +429,36 @@
 					Header="Символи керування">
 					<MenuItem
 						Header="+"
-					x:Name="menuItem11"
-							Click="menuItem11_Click"></MenuItem>
+						x:Name="menuItem55"
+						Click="menuItem55_Click"></MenuItem>
 					<MenuItem
-						Header="-"></MenuItem>
+						Header="-"
+						x:Name="menuItem29"
+						Click="menuItem29_Click"></MenuItem>
 					<MenuItem
-						Header="="></MenuItem>
+						Header="="
+						x:Name="menuItem95"
+						Click="menuItem95_Click"></MenuItem>
 					<MenuItem
-						Header="("></MenuItem>
+						Header="("
+						x:Name="menuItem96"
+						Click="menuItem96_Click"></MenuItem>
 					<MenuItem
-						Header=")"></MenuItem>
+						Header=")"
+						x:Name="menuItem97"
+						Click="menuItem97_Click"></MenuItem>
 					<MenuItem
-						Header="↑"></MenuItem>
+						Header="↑"
+						x:Name="menuItem98"
+						Click="menuItem98_Click"></MenuItem>
 					<MenuItem
-						Header="↓"></MenuItem>
+						Header="↓"
+						x:Name="menuItem99"
+						Click="menuItem99_Click"></MenuItem>
 					<MenuItem
-						Header="→"></MenuItem>
+						Header="→"
+						x:Name="menuItem100"
+						Click="menuItem100_Click"></MenuItem>
 				</MenuItem>
 				<MenuItem
 					Header="Індекси"></MenuItem>
@@ -281,5 +468,51 @@
 				x:Name="menuItem2"
 				Click="menuItem2_Click" />
 		</Menu>
+		<!-- текстовое поле -->
+		<RichTextBox
+			x:Name="fff"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Stretch"
+			VerticalAlignment="Stretch"
+			Margin="0,26,0,0"
+			Background="#FFF7D83D"
+			Foreground="#FF1713F4"
+			FontSize="20"
+			FontWeight="ExtraBold" />
+		<Button
+			x:Name="cmdBold"
+			Content="B"
+			FontWeight="Bold"
+			Click="cmdFormatting_Click"
+			Width="33"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Stretch"
+			Margin="0,-1,268,189" />
+		<Button
+			x:Name="cmdItalic"
+			Content="I"
+			FontStyle="Italic"
+			Click="cmdFormatting_Click"
+			Grid.Column="0"
+			Grid.Row="0"
+			VerticalAlignment="Stretch"
+			Width="36"
+			HorizontalAlignment="Left"
+			Margin="236,-1,0,189" />
+		<Button
+			x:Name="cmdUnder"
+			Click="cmdFormatting_Click"
+			RenderTransformOrigin="0.4091,0.5435"
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Stretch"
+			VerticalAlignment="Stretch"
+			Margin="195,-1,353,189">
+			<TextBlock
+				TextDecorations="Underline">U</TextBlock>
+		</Button>
 	</Grid>
 </Window>
